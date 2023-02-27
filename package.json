@@ -1,0 +1,29 @@
+{
+  "name": "default-theme",
+  "version": "1.0.0",
+  "repository": "git@github.com:jotform/default-theme.git",
+  "author": "Ertugrul Emre Ertekin <eee@jotform.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cssnano": "4.1.10",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "7.0.1",
+    "gulp-cli": "2.3.0",
+    "gulp-cssimport": "~7.0.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.1.0"
+  },
+  "devDependencies": {
+    "@jotforminc/stylelint-config": "0.0.25",
+    "concurrently": "5.2.0",
+    "stylelint": "13.6.1"
+  },
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp",
+    "lint:style": "stylelint src/**/*.css src/**/*.scss src/**/**/*.scss"
+  },
+  "engines": {
+    "pnpm": "^7.17.1"
+  }
+}
