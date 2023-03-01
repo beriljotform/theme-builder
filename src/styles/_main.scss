@@ -1,0 +1,43 @@
+.form-all {
+  position: relative;
+}
+.form-all:before,
+.form-all:after {
+  content: "";
+  position: fixed;
+  background: url(https://cdn.jotfor.ms/assets/img/new-default-theme/form-bg/theme-leaf.png) !important;
+  z-index: 11;
+  width: 650px;
+  height: 587px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.form-all:before {
+  top: 0;
+  right: 0;
+}
+.form-all:after {
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+.rating-item {
+  width : 70px;
+}
+
+.rating-item > label {
+  width : 70px;
+  height : 34px;
+  border-radius : 8px;
+}
+
+li[data-type="control_rating"].form-line-error .form-star-rating .form-star-rating-star:not(:last-child) {
+ background-position : -129px 0px !important;
+}
+li[data-type=control_datetime] [data-wrapper-react=true].extended>div + .form-sub-label-container .form-textbox:placeholder-shown, 
+li[data-type=control_datetime] [data-wrapper-react=true]:not(.extended) .form-textbox:not(.time-dropdown):placeholder-shown,
+li[data-type=control_datetime] [data-wrapper-react=true].extended>div + .form-sub-label-container .form-textbox,
+li[data-type=control_datetime] [data-wrapper-react=true]:not(.extended) .form-textbox:not(.time-dropdown) {
+  background-position : left 10px bottom 50%;
+  padding-left: 36px;
+}

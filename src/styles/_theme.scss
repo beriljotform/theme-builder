@@ -1,8 +1,132 @@
-body{
-  background-color: red;
-  color:'blue'
+
+.form-sub-label,
+::placeholder,
+.form-dropdown:first-child,
+.form-spinner-button,
+.appointmentCalendarContainer,
+.appointmentSlot,
+.pickerItem select,
+.selectedDate input,
+.clear-pad-btn,
+.calendar.popup th,
+.FITB-button,
+.form-submit-reset,
+.stageEmpty.isSmall,
+.appointmentCalendar .calendarDay,
+.rating-item label,
+li[data-type=control_fileupload] .qq-upload-button,
+.rating-item input:focus+label, .rating-item input:hover+label {
+  color : $main-color;
+}
+.appointmentCalendar .dayOfWeek,
+.form-matrix-headers {
+  color: $white-color;
+}
+.rating-item label,
+li[data-type=control_fileupload] .qq-upload-button {
+  color : $active-color;
 }
 
-main{
-  color: red;
+.appointmentCalendar .calendarDay.isUnavailable {
+  color : rgba($color: $main-color, $alpha: 0.3);
+}
+
+.rating-item label {
+  background-color : $white-color;
+}
+
+
+.rating-item input:focus+label,
+.rating-item input:hover+label {
+   border-color : $white-color;
+   color: $white-color;
+}
+
+.rating-item-title.for-to > label:first-child,
+.rating-item-title.for-from > label:first-child,
+.rating-item-title .editor-container * {
+   background-color : transparent;
+}
+
+.form-matrix-headers,
+.form-spinner-button,
+.appointmentCalendar .dayOfWeek,
+.appointmentCalendar .calendarDay.isActive .calendarDayEach,
+.appointmentFieldRow.forSelectedDate,
+.appointmentCalendar .dayOfWeek,
+.calendar.popup th,
+.FITB-button,
+.appointmentDayPickerButton,
+.appointmentCalendar .calendarDay:after,
+.rating-item input:focus+label, .rating-item input:hover+label {
+  background-color : $main-color;
+}
+
+.appointmentSlot.active {
+  background-color : $active-color !important;
+}
+.appointmentDayPickerButton:hover {
+  background-color: $hover-color;
+}
+.appointmentSlot:not(.disabled):not(.active):hover,
+.rating-item input:focus+label, .rating-item input:hover+label,
+.form-collapse-table:hover,
+.clear-pad-btn:hover {
+  background-color : rgba($color: $main-color, $alpha: 0.5);
+}
+.stageEmpty,
+.form-collapse-table,
+.clear-pad-btn,
+li[data-type=control_fileupload] .qq-upload-button {
+  background-color : rgba($color: $main-color, $alpha: 0.1);
+}
+
+.rating-item label,
+.rating-item input:checked+label,
+.form-matrix-column-headers,
+.form-matrix-table td,
+.form-matrix-table td:last-child,
+.form-matrix-table th,
+.form-matrix-table th:last-child,
+.form-matrix-table tr:last-child td,
+.form-matrix-table tr:last-child th,
+.form-matrix-table tr:not([role=group])+tr[role=group] th {
+  border-color : $active-color;
+}
+
+.form-checkbox+label:before, .form-checkbox+span:before,
+.form-radio+label:before, .form-radio+span:before {
+  border-color : $hover-color;
+}
+
+.rating-item input:focus+label, .rating-item input:hover+label {
+  border-color : $main-color;
+}
+
+.appointmentSlot,
+.appointmentCalendar .calendarDay.isActive .calendarDayEach,
+.appointmentCalendar .calendarDay.isToday .calendarDayEach,
+.appointmentCalendar .calendarDay:not(.empty):hover .calendarDayEach {
+  border : 1px solid $main-color;
+}
+.stageEmpty {
+  border: 2px dashed $main-color;
+}
+.form-matrix-headers.form-matrix-column-headers {
+  border-top : 1px solid $hover-color;
+}
+
+.isSelected .form-matrix-column-headers:nth-last-of-type(2) {
+  border-right : 1px solid $hover-color;
+}
+
+.rating-item input:checked+label {
+  background-color : $active-color;
+}
+
+.rating-item-title.for-to > label:first-child,
+.rating-item-title.for-from > label:first-child,
+.rating-item-title .editor-container * {
+  background-color : transparent;
+  color : $white-color;
 }
