@@ -1,0 +1,15 @@
+
+li[data-type=control_inline] .form-textbox:not(#productSearch-input),
+.form-dropdown,
+.form-textarea,
+.form-textbox:not(#productSearch-input):not(.form-spinner-input) {
+    border-width: 0 0 1px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-dropdown:hover,
+.form-textarea:hover,
+.form-textbox:hover {
+    box-shadow: none;
+}
